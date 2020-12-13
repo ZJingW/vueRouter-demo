@@ -1,28 +1,28 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <!--3.shiyong-->
+    
+    <my-add></my-add>  
+    <my-dec></my-dec>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import  Add from "./components/Add.vue";  //1.导入组件
+import Dec from "./components/Dec.vue";
+
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
+  data(){
+    return{
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+    }
+  },
+  components:{  //局部注册组件为App的子组件
+    "my-add" :Add,
+    "my-dec" :Dec
+  
+  }
+  
+};
+</script>

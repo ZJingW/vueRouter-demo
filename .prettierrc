@@ -1,0 +1,4 @@
+{ ///暂时没用哈哈哈  
+  "semi":false,  //不要分号
+  "singleQuote":true  //不要双引号，变成单引号
+}
